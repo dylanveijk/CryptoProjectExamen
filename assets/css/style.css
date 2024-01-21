@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap');
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif;
+
+}
+
+
+
+:root {
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+}
+
+body {
+
+    background-image: url("coins.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
