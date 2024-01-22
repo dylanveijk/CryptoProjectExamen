@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap');
 
 body {
-
+    position: relative;
     background-color: #e5e5e5;
+    padding-bottom: 5rem;
     font-family: "Poppins", sans-serif;
 }
 
@@ -100,4 +101,35 @@ nav {
 .mt-5 {
 
     margin-top: 5rem;
+}
+
+
+.text-center {
+
+    text-align: center;
+}
+
+.color-yellow {
+
+    color: #fca311;
+}
+
+.card {
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.footer-image {
+
+    height: 1.5rem;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 2rem);
 }
