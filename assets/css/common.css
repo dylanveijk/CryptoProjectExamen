@@ -5,6 +5,7 @@ body {
     background-color: #e5e5e5;
     padding-bottom: 5rem;
     font-family: "Poppins", sans-serif;
+    min-height: calc(100vh - 5rem);
 }
 
 

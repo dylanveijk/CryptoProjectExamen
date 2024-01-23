@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+
+.search-input-container input {
+    font-size: 1.5rem;
+}
+
+
 .search-result-container {
 
     display: flex;
@@ -38,4 +44,17 @@
 
 .single-search-result>p {
     margin-top: 0.45rem;
+}
+
+.single-search-result>button {
+    background-color: #ffffff;
+    border: 1px solid #14213d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.single-search-result>button:hover {
+    background-color: #14213d;
+    color: #ffffff;
 }
