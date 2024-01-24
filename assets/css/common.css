@@ -79,6 +79,10 @@ nav {
     margin-left: 1rem;
 }
 
+.ml-5 {
+    margin-left: 5rem;
+}
+
 .ml-10 {
 
     margin-left: 10rem;
@@ -87,6 +91,10 @@ nav {
 .mr-1 {
 
     margin-right: 1rem;
+}
+
+.mr-5 {
+    margin-right: 5rem;
 }
 
 .mb-1 {
