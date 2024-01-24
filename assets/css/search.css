@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     padding: 0.5rem 2rem;
     margin: 0rem 5rem;
-    justify-content: space-between;
+    gap: 1rem;
     transition: all 0.25s;
 }
 
@@ -46,15 +46,19 @@
     margin-top: 0.45rem;
 }
 
-.single-search-result>button {
+.single-search-result>a {
     background-color: #ffffff;
     border: 1px solid #14213d;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.25s;
+    padding: 0.25rem 1rem;
+    margin-left: auto;
+    text-decoration: none;
+    color: #000000;
 }
 
-.single-search-result>button:hover {
+.single-search-result>a:hover {
     background-color: #14213d;
     color: #ffffff;
 }

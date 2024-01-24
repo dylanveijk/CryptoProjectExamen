@@ -1,11 +1,3 @@
-// https://api.coingecko.com/api/v3/search/trending
-// https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd
-
-
-function convertToJSON(response) {
-    return response.json();
-}
-
 function windowLoaded() {
     fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
         .then(convertToJSON)
