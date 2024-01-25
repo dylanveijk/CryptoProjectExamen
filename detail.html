@@ -23,14 +23,14 @@
     </nav>
     <!--This is for the discription-->
     <section class="flex-container">
-        <img src="assets/images/logo.png" alt="Coin logo" class="home-img">
+        <img src="assets/images/logo.png" id="coin-logo" alt="Coin logo" class="home-img">
         <div class="main-contents">
 
-            <h1 class="mb-1 color-yellow" id="coin-name">...</h1>
+            <h1 class="mb-1 color-yellow" id="coin-name"></h1>
 
             <div class="flex-container space-around mb-1 mt-1">
-                <p>$ 39.800</p>
-                <p>€ 36.340</p>
+                <p>$ <span id="usd-price"></span></p>
+                <p>€ <span id="eur-price"></span></p>
             </div>
 
             <h3 class="mt-1">Description:</h3>
@@ -43,11 +43,7 @@
     <!--This is for the price chart -->
     <section class="ml-5 mr-5">
         <h1 class="color-yellow">Price History</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis neque sit amet urna tempor
-            hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut
-            molestie odio at ex rhoncus, id fermentum magna ullamcorper. Pellentesque convallis, orci et tristique
-            vehicula, mi sem ultricies odio, non maximus elit nisl tincidunt dolor. Proin at auctor metus, convallis
-            vulputate sapien.</p>
+        <canvas id="myChart" width="100" height="25"></canvas>
     </section>
 
 
@@ -59,6 +55,7 @@
         </a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/detail.js"></script>
 </body>
