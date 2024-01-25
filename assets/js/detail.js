@@ -15,7 +15,7 @@ function loadDetail() {
 }
 
 function render(data) {
-    const name = `${data.name}(${data.symbol})`;
+    const name = `${data.name}(${data.symbol.toUpperCase()})`;
     const description = data.description.en;
     const logo = data.image.large;
     const usd = data.market_data.current_price.usd;
