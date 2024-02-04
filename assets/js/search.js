@@ -7,7 +7,7 @@ function searchData() {
         return;
     }
 
-    document.getElementsByName('q')[0].value = params.get('q');
+    document.getElementById('search_coin').value = params.get('q');
 
     fetch('https://api.coingecko.com/api/v3/search?query=' + params.get('q'))
         .then(convertToJSON)
@@ -17,7 +17,6 @@ function searchData() {
 
 
 function render(data) {
-
 
     for (let i = 0; i < data.coins.length; i++) {
         const singleCoin = data.coins[i];
