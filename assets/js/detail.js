@@ -13,7 +13,7 @@ function loadDetail() {
         .then(convertToJSON)
         .then(renderChart);
 }
-
+//here it renders the data from the api//
 function render(data) {
     const name = `${data.name}(${data.symbol.toUpperCase()})`;
     const description = data.description.en;
@@ -31,12 +31,12 @@ function render(data) {
 
 
 }
-
+//this will let the loadDetail function run when the window is fully loaded//
 window.onload = function () {
     loadDetail();
 }
 
-
+// here we load the chart with the correct data in it//
 function renderChart(data) {
     const prices = data.prices;
     const timesstamps = [];

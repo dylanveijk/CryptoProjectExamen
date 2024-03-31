@@ -4,6 +4,7 @@ function windowLoaded() {
         .then(loadCoinData)
 }
 
+// here it loads the coindata//
 function loadCoinData(data) {
     const conversionRate = data.bitcoin.usd;
     fetch('https://api.coingecko.com/api/v3/search/trending')
@@ -13,7 +14,7 @@ function loadCoinData(data) {
         })
 }
 
-
+//here it renders the data from the api//
 function render(coinData, conversionRate) {
     for (let i = 0; i < coinData.coins.length; i++) {
         const singleCoin = coinData.coins[i].item;
@@ -24,7 +25,7 @@ function render(coinData, conversionRate) {
         insertCryptoCard(logo, name, price);
     }
 }
-
+// here it loads all the data and inserts it into the divs etc(cryptocards)//
 function insertCryptoCard(thumb, name, price) {
     const price_para = document.createElement('p');
     price_para.innerText = `$ ${price}`;
@@ -49,7 +50,7 @@ function insertCryptoCard(thumb, name, price) {
 
     document.getElementById('coins_container').appendChild(card_container);
 }
-
+//this will let the windowloaded function run when the window is fully loaded//
 window.onload = function () {
     windowLoaded();
 }

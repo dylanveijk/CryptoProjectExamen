@@ -16,6 +16,7 @@ function searchData() {
 }
 
 
+//here it renders the data from the api//
 function render(data) {
 
     for (let i = 0; i < data.coins.length; i++) {
@@ -29,7 +30,7 @@ function render(data) {
 
     }
 }
-
+// here it loads all the data and inserts it into the divs etc//
 function createSingleCard(index, logo, name, symbol, coinId) {
 
     const id_elem = document.createElement('p');
@@ -65,7 +66,7 @@ function createSingleCard(index, logo, name, symbol, coinId) {
 }
 
 
-
+//this will let the loadDetail function run when the window is fully loaded//s
 window.onload = function () {
     searchData();
 }
