@@ -66,7 +66,7 @@ function createSingleCard(index, logo, name, symbol, coinId) {
 }
 
 
-//this will let the loadDetail function run when the window is fully loaded//s
+//this will let the searchData function run when the window is fully loaded//s
 window.onload = function () {
     searchData();
 }
