@@ -1,4 +1,3 @@
-
 function searchData() {
     const currentURL = window.location.href;
     const url_obj = new URL(currentURL);
@@ -55,6 +54,9 @@ function createSingleCard(index, logo, name, symbol, coinId) {
 
     const container_elem = document.createElement('div');
     container_elem.classList.add('single-search-result', 'card')
+    container_elem.addEventListener('click', function () {
+        window.location.href = "./detail.html?id=" + coinId;
+    })
 
     container_elem.appendChild(id_elem)
     container_elem.appendChild(logo_elem)
