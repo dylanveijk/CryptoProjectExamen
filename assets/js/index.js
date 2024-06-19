@@ -41,7 +41,7 @@ function insertCryptoCard(thumb, name, price) {
     const image_elem = document.createElement('img');
     image_elem.src = thumb;
     image_elem.classList.add('f-left', 'card-image');
-    image_elem.alt = "Bitcoin Image";
+    image_elem.alt = "Coin Image";
 
     const card_container = document.createElement('div');
     card_container.classList.add('flex-item-small', 'card');
